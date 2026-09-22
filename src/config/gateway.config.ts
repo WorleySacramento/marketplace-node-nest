@@ -1,4 +1,4 @@
-export const gatewayConfig = {
+export const serviceConfig = {
     users:{
         url: process.env.USERS_URL || 'http://localhost:3000',
         timeout: 10000,
