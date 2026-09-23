@@ -7,6 +7,7 @@ import { ThrottlerModule } from '@nestjs/throttler/dist/throttler.module.js';
 import { ProxyModule } from './proxy/proxy.module.js';
 import { MiddlewareModule } from './middleware/middleware.module.js';
 import { LoggingMiddleware } from './middleware/logging/logging.middleware.js';
+import { AuthModule } from './auth/auth.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -41,6 +42,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     ]),
     ProxyModule,
     MiddlewareModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
